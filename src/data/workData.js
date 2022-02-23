@@ -1,4 +1,10 @@
-import { BsShieldLockFill, BsFillLightningFill, BsFileX } from "react-icons/bs";
+import {
+  BsShieldLockFill,
+  BsFillLightningFill,
+  BsSnapchat,
+  BsSuitSpadeFill,
+  BsSunglasses,
+} from "react-icons/bs";
 import { BiSupport, BiDollar } from "react-icons/bi";
 import { IoIosOptions } from "react-icons/io";
 import { HiCubeTransparent } from "react-icons/hi";
@@ -22,7 +28,7 @@ const Icon = (IconComponents) => {
 export const work = [
   {
     icon: Icon(BsShieldLockFill),
-    title: "UX Design",
+    title: "UXDesign",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
@@ -34,13 +40,13 @@ export const work = [
   },
   {
     icon: Icon(BsFillLightningFill),
-    title: "website development",
+    title: "website\r\ndevelopment",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
   {
     icon: Icon(BiDollar),
-    title: "mobile app development",
+    title: "mobile app\r\ndevelopment",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
@@ -57,19 +63,19 @@ export const work = [
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
   {
-    icon: Icon(BsShieldLockFill),
-    title: "DIGITAL TRANSFORMATION",
+    icon: Icon(BsSnapchat),
+    title: "DIGITAL\r\nTRANSFORMATION",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
   {
-    icon: Icon(BiSupport),
-    title: "DIGTAL MARKETING",
+    icon: Icon(BsSuitSpadeFill),
+    title: "DIGTAL\r\nMARKETING",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
   },
   {
-    icon: Icon(BsFillLightningFill),
+    icon: Icon(BsSunglasses),
     title: "BRANDING",
     description:
       "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",

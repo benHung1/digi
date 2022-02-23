@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Media_Query_Desktops } from "../../RwdStyles";
+import { Media_Query_Desktops, Media_Query_Phones } from "../../RwdStyles";
 
 export const Container = styled.div`
   margin-top: 420px;
@@ -39,6 +39,9 @@ export const Title = styled.h4`
     text-decoration-color: #26c6d0;
     text-decoration-line: underline;
     color: transparent;
+    ${Media_Query_Phones} {
+      top: 30px;
+    }
   }
 `;
 

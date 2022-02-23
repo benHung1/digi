@@ -54,7 +54,9 @@ const Work = () => {
           {work.map((el, index) => (
             <ContentWrapper key={index}>
               <ContentIcon>{el.icon}</ContentIcon>
-              <ContentTitle>{el.title}</ContentTitle>
+              <ContentTitle>
+                <pre>{el.title}</pre>
+              </ContentTitle>
               <ContentText>{el.description}</ContentText>
               <ContentButton>VIEW MORE</ContentButton>
             </ContentWrapper>

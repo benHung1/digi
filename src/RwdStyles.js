@@ -8,4 +8,4 @@ export const Media_Query_Tables = "@media screen and (max-width: 767.98px)";
 
 export const Media_Query_Phones = "@media screen and (max-width: 576.98px)";
 
-export const Media_Query_Phones_Small = "@media screen and (max-width: 450px)";
+export const Media_Query_Phones_Small = "@media screen and (max-width: 360px)";

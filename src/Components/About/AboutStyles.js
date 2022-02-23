@@ -6,6 +6,7 @@ import {
   Media_Query_Phones,
   Media_Query_Book,
 } from "../../RwdStyles";
+import { BsPauseCircleFill, BsPlayCircleFill } from "react-icons/bs";
 
 export const Container = styled.div`
   position: relative;
@@ -51,6 +52,9 @@ export const Title = styled.h1`
     text-decoration-color: #26c6d0;
     text-decoration-line: underline;
     color: transparent;
+    ${Media_Query_Phones} {
+      top: 30px;
+    }
   }
 `;
 
@@ -58,6 +62,7 @@ export const VideoContainer = styled.div`
   position: relative;
   width: 960px;
   height: 544px;
+  background-color: #ffffff;
   ${Media_Query_Desktops} {
     max-width: 100%;
     max-height: 100%;
@@ -75,6 +80,32 @@ export const VideoButton = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+`;
+
+export const PauseIcon = styled(BsPauseCircleFill)`
+  width: 113px;
+  height: 113px;
+  ${Media_Query_Book} {
+    width: 80px;
+    height: 80px;
+  }
+  ${Media_Query_Phones} {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
+export const PlayIcon = styled(BsPlayCircleFill)`
+  width: 113px;
+  height: 113px;
+  ${Media_Query_Book} {
+    width: 80px;
+    height: 80px;
+  }
+  ${Media_Query_Phones} {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const TextContainer = styled.div`

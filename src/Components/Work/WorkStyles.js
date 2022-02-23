@@ -45,6 +45,9 @@ export const TopTitle = styled.h3`
     text-decoration-color: #585880;
     text-decoration-line: underline;
     color: transparent;
+    ${Media_Query_Phones} {
+      top: 30px;
+    }
   }
 `;
 
@@ -120,14 +123,15 @@ export const ContentTitle = styled.h4`
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 20px;
   text-transform: uppercase;
+  height: 48px;
+  display: flex;
+  align-items: center;
 `;
 
 export const ContentText = styled.p`

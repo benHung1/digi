@@ -17,10 +17,11 @@ import {
   RightContainer,
   RightImg,
   ImgContainer,
+  PauseIcon,
+  PlayIcon,
 } from "./AboutStyles";
 import { VscCircleFilled } from "react-icons/vsc";
 import SaladVideo from "../../Video/DigiSalad.mp4";
-import { BsPauseCircleFill, BsPlayCircleFill } from "react-icons/bs";
 import Img from "../../Video/e2d780_5ffb3b6f704c4503a54572866ff325d0_mv2 (1).png";
 import { aboutData } from "../../data/aboutData";
 
@@ -48,15 +49,15 @@ const About = () => {
         <Video
           muted
           ref={vidRef}
-          poster="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          poster="https://cdn.pixabay.com/photo/2016/11/05/20/13/eagle-1801298_960_720.png"
         >
           <source src={SaladVideo} type="video/mp4" />
         </Video>
         <VideoButton onClick={handleVideo}>
           {playVideo ? (
-            <BsPauseCircleFill color="#26C6D0" size={112} />
+            <PauseIcon color="#26C6D0" />
           ) : (
-            <BsPlayCircleFill color="#26C6D0" size={112} />
+            <PlayIcon color="#26C6D0" />
           )}
         </VideoButton>
       </VideoContainer>
