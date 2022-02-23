@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import {
+  Media_Query_Desktops,
+  Media_Query_Large,
+  Media_Query_Tables,
+  Media_Query_Phones,
+  Media_Query_Book,
+} from "../../RwdStyles";
 
 export const Container = styled.div`
   position: relative;
@@ -15,7 +22,8 @@ export const TopLine = styled.div`
   left: 50%;
   transform: translateX(-50%);
   height: 86px;
-  border: 1px solid gray;
+  width: 1px;
+  background-color: #808080;
 `;
 
 export const TitleContainer = styled.div`
@@ -30,17 +38,35 @@ export const Title = styled.h1`
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 3.63636px;
-  text-decoration: 3px #26c6d0 wavy underline;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  &::before {
+    content: "aaaaaaaaaaaaaaa";
+    position: absolute;
+    top: 8.7px;
+    left: -12px;
+    font-size: 2.5rem;
+    text-decoration-style: wavy;
+    text-decoration-color: #26c6d0;
+    text-decoration-line: underline;
+    color: transparent;
+  }
 `;
 
 export const VideoContainer = styled.div`
+  position: relative;
   width: 960px;
   height: 544px;
-  position: relative;
+  ${Media_Query_Desktops} {
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;
 
 export const Video = styled.video`
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 `;
 
 export const VideoButton = styled.div`
@@ -54,6 +80,9 @@ export const VideoButton = styled.div`
 export const TextContainer = styled.div`
   width: 1007px;
   margin-top: 30px;
+  ${Media_Query_Desktops} {
+    max-width: 100%;
+  }
 `;
 
 export const Text = styled.p`
@@ -73,7 +102,6 @@ export const Button = styled.button`
   align-items: center;
   border: none;
   background: #26c6d0;
-  padding: 15px;
   margin-top: 30px;
   font-family: Proxima Nova;
   font-style: normal;
@@ -83,6 +111,8 @@ export const Button = styled.button`
   letter-spacing: 2.22222px;
   color: #ffffff;
   margin-bottom: 250px;
+  width: 223px;
+  height: 86px;
 `;
 
 export const FloatContainer = styled.div`
@@ -95,13 +125,25 @@ export const FloatContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
-  top: 85%;
-  left: 10%;
+  bottom: -18%;
+  right: 0;
+  width: 1346px;
+  ${Media_Query_Large} {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const LeftContainer = styled.div`
-  flex: 1;
-  padding: 0px 90px;
+  padding: 0px 0px 0px 90px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  ${Media_Query_Book} {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
 `;
 
 export const LeftTitle = styled.h3`
@@ -112,8 +154,20 @@ export const LeftTitle = styled.h3`
   line-height: 34px;
   letter-spacing: 3.63636px;
   color: #262626;
-  text-decoration: 3px #26c6d0 wavy underline;
   padding: 50px 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  &::before {
+    content: "aaaaaaaa";
+    position: absolute;
+    left: -15px;
+    font-size: 2.5rem;
+    text-decoration-style: wavy;
+    text-decoration-color: #26c6d0;
+    text-decoration-line: underline;
+    color: transparent;
+  }
 `;
 
 export const LeftText = styled.p`
@@ -125,14 +179,26 @@ export const LeftText = styled.p`
   letter-spacing: 1px;
   color: #262626;
   width: 416px;
+
+  ${Media_Query_Phones} {
+    width: 100%;
+  }
 `;
 
 export const RightContainer = styled.div`
   flex: 1;
-  display: block;
-  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  ${Media_Query_Tables} {
+    display: none;
+  }
 `;
 
+export const ImgContainer = styled.div``;
+
 export const RightImg = styled.img`
-  width: 300px;
+  width: 284px;
+  margin: 19px 0px 19px 37px;
 `;

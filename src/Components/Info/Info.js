@@ -1,59 +1,64 @@
 import React from "react";
-import "./InfoStyles";
 import {
   Container,
-  Nav,
-  NavButton,
+  Wrapper,
+  NavBar,
+  Button,
   Icon,
-  AsideContainer,
+  Aside,
   AsideText,
-  AsideLine,
-  CenterText,
+  Logo,
+  Title,
   BottomContainer,
-  BottomDiv,
+  BottomImg,
   BottomText,
-  CenterImgWrapper,
-  CenterTextWrapper,
-  CenterSpan,
   BottomLine,
-  VideoContainer,
-  BgVideo,
+  MiddleContainer,
+  MiddleWrapper,
+  Span,
+  BottomWrapper,
+  Video,
+  Circle,
 } from "./InfoStyles";
-import { VscCircleFilled } from "react-icons/vsc";
 
-import Video from "../../Video/DigiSalad Website Video-v3.mp4";
+import { VscCircleFilled } from "react-icons/vsc";
+import BGVideo from "../../Video/DigiSalad Website Video-v3.mp4";
 
 const url = "https://tw.digisalad.cool/images/logo-white.png";
 
 const Info = () => {
   return (
     <Container>
-      <VideoContainer autoPlay loop muted>
-        <BgVideo autoPlay loop muted>
-          <source src={Video} type="video/mp4" />
-        </BgVideo>
-      </VideoContainer>
-      <Nav>
-        <NavButton>START YOUR PROJECT</NavButton>
-        <Icon size={30} />
-      </Nav>
-      <AsideContainer>
-        <AsideLine />
-        <AsideText>DIGITAL AGENCY</AsideText>
-      </AsideContainer>
-      <CenterImgWrapper src={url} />
-      <CenterTextWrapper>
-        <CenterText>
-          WE CREATE
-          <br /> AMAZING <br /> <CenterSpan>DIGITAL EXPERIENCES</CenterSpan>
-          <VscCircleFilled size={10} color="#EE6C8A" />
-        </CenterText>
-      </CenterTextWrapper>
-      <BottomContainer>
-        <BottomDiv />
-        <BottomText>Taste us now!</BottomText>
-        <BottomLine />
-      </BottomContainer>
+      <Video autoPlay loop muted>
+        <source src={BGVideo} type="video/mp4" />
+      </Video>
+      <Wrapper>
+        <NavBar>
+          <Button>START YOUR PROJECT</Button>
+          <Icon size={30} color="#ffffff" />
+        </NavBar>
+        <Aside>
+          <AsideText>DIGITAL AGENCY</AsideText>
+        </Aside>
+        <MiddleContainer>
+          <MiddleWrapper>
+            <Logo src={url} />
+            <Title>
+              WE CREATE
+              <br /> AMAZING
+              <br /> <Span>DIGITAL EXPERIENCES</Span>
+              <Circle size={20} color="#ee6c8a" />
+            </Title>
+          </MiddleWrapper>
+        </MiddleContainer>
+        <BottomContainer>
+          <BottomWrapper>
+            <BottomImg />
+            <BottomText>TASTE US NOW!</BottomText>
+            <BottomLine />
+          </BottomWrapper>
+        </BottomContainer>
+      </Wrapper>
     </Container>
   );
 };
