@@ -196,10 +196,8 @@ export const SideMenu = styled.div`
   position: absolute;
   border-radius: 0 0 60px 60px;
   z-index: 99;
-  visibility: ${({ nav }) => (nav ? "hidden" : "visible")};
+  visibility: ${({ nav }) => (nav ? "visible" : "hidden")};
 `;
-
-export const SideBg = styled.div``;
 
 export const SideNav = styled.div`
   display: flex;

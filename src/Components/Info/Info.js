@@ -38,7 +38,6 @@ import {
   SideMiddle,
   SideRight,
   CardTextWrapper,
-  SideBg,
 } from "./InfoStyles";
 import { HiMenuAlt3 } from "react-icons/hi";
 
@@ -48,13 +47,16 @@ import { VscCircleFilled } from "react-icons/vsc";
 const url = "https://tw.digisalad.cool/images/logo-white.png";
 
 const Info = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
+
+  const handleClose = () => {
+    setNav(!nav);
+  };
 
   return (
     <>
       <Container>
         <SideMenu nav={nav} onClick={() => setNav(!nav)}>
-          <SideBg />
           <SideNav>
             <SideNavLogo src={url} />
             <SideNavIcon color="#ffffff" size={22} />
@@ -67,6 +69,7 @@ const Info = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                onClick={handleClose}
               >
                 <SideCard1>
                   <CardIcon
@@ -88,6 +91,7 @@ const Info = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                onClick={handleClose}
               >
                 <SideCard2>
                   <CardIcon
@@ -111,6 +115,7 @@ const Info = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                onClick={handleClose}
               >
                 <SideCard3>
                   <CardTextWrapper style={{ margin: "0 0 48px 37px" }}>
@@ -129,6 +134,7 @@ const Info = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                onClick={handleClose}
               >
                 <SideCard4>
                   <CardTextWrapper style={{ margin: "0 0 48px 31px" }}>
@@ -148,6 +154,7 @@ const Info = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                onClick={handleClose}
               >
                 <SideCard5>
                   <CardTextWrapper style={{ margin: "0 0 48px 42px" }}>

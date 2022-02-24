@@ -20,7 +20,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: blur(8px) drop-shadow(-50px -50px 0px black);
+    filter: blur(8px) drop-shadow(-0px -0px 0px black);
   }
 `;
 

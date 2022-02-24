@@ -46,11 +46,7 @@ const About = () => {
         </Title>
       </TitleContainer>
       <VideoContainer>
-        <Video
-          muted
-          ref={vidRef}
-          poster="https://cdn.pixabay.com/photo/2016/11/05/20/13/eagle-1801298_960_720.png"
-        >
+        <Video muted ref={vidRef} poster="https://i.imgur.com/cLBP2HY.jpg">
           <source src={SaladVideo} type="video/mp4" />
         </Video>
         <VideoButton onClick={handleVideo}>

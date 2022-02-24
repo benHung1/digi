@@ -66,7 +66,6 @@ export const VideoContainer = styled.div`
   position: relative;
   width: 960px;
   height: 544px;
-  background-color: #ffffff;
   ${Media_Query_Desktops} {
     max-width: 100%;
     max-height: 100%;
