@@ -227,13 +227,15 @@ export const SideWrapper = styled.div`
 
 export const SideLeft = styled.div``;
 
-export const SideMiddle = styled.div``;
+export const SideMiddle = styled.div`
+  margin-top: -40px;
+`;
 
 export const SideRight = styled.div``;
 
 export const SideCard1 = styled.div`
-  width: 407px;
-  height: 229px;
+  width: 380px;
+  height: 210px;
   background-color: #26c6d0;
   border-radius: 30px;
   mix-blend-mode: normal;
@@ -259,8 +261,8 @@ export const SideCard1 = styled.div`
 `;
 
 export const SideCard2 = styled.div`
-  width: 568px;
-  height: 348px;
+  width: 380px;
+  height: 320px;
   background: rgba(238, 108, 138, 0.8);
   border-radius: 30px;
   margin-top: 30px;
