@@ -41,6 +41,7 @@ export const Title = styled.h4`
     color: transparent;
     ${Media_Query_Phones} {
       top: 30px;
+      content: "aaaaaaaaaaa";
     }
   }
 `;

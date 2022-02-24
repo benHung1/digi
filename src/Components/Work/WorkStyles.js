@@ -4,6 +4,7 @@ import {
   Media_Query_Desktops,
   Media_Query_Tables,
   Media_Query_Phones,
+  Media_Query_Phones_Small,
 } from "../../RwdStyles";
 
 export const Container = styled.div`
@@ -47,6 +48,9 @@ export const TopTitle = styled.h3`
     color: transparent;
     ${Media_Query_Phones} {
       top: 30px;
+    }
+    ${Media_Query_Phones_Small} {
+      content: "aaaaaaaaaaaaa";
     }
   }
 `;

@@ -5,6 +5,7 @@ import {
   Media_Query_Tables,
   Media_Query_Phones,
   Media_Query_Book,
+  Media_Query_Phones_Small,
 } from "../../RwdStyles";
 import { BsPauseCircleFill, BsPlayCircleFill } from "react-icons/bs";
 
@@ -54,6 +55,9 @@ export const Title = styled.h1`
     color: transparent;
     ${Media_Query_Phones} {
       top: 30px;
+    }
+    ${Media_Query_Phones_Small} {
+      content: "aaaaaaaaaaaaaa";
     }
   }
 `;

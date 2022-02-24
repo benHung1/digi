@@ -38,7 +38,7 @@ const Slider = () => {
   };
 
   return (
-    <Container>
+    <Container id="careers">
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowBackIosOutlined />
       </Arrow>

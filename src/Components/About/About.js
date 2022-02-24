@@ -37,7 +37,7 @@ const About = () => {
     }
   };
   return (
-    <Container>
+    <Container id="about">
       <TopLine />
       <TitleContainer>
         <Title>

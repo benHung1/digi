@@ -33,7 +33,7 @@ const Work = () => {
   return (
     <Container>
       <Wrapper>
-        <TopContainer>
+        <TopContainer id="services">
           <TopTitle>
             {works.TopTitle}
             <VscCircleFilled size={20} color="#EE6C8A" />
@@ -72,14 +72,14 @@ const Work = () => {
             borderBottomRightRadius: "60px",
           }}
         >
-          <FloatContainer>
+          <FloatContainer id="insights">
             <FloatWrapper>
               <LeftContainer>
                 <LeftImg />
                 <LeftTitle>{floatcontainer.name}</LeftTitle>
                 <LeftText> {floatcontainer.desc} </LeftText>
               </LeftContainer>
-              <RightContainer>
+              <RightContainer id="works">
                 <RightImg src={quote} />
                 <RightText>
                   {floatcontainer.text}
